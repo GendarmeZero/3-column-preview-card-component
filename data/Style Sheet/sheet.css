@@ -1,0 +1,165 @@
+body {
+    background-color: snow;
+     
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rosybrown;
+     box-shadow: black 5px 5px 15px 5px;
+    width: 1500px;
+    height: 600px;
+    
+    
+}
+
+.main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1500px; 
+    height: 90%; 
+    max-height: 900px; 
+}
+
+.box {
+    background-color: #e28525;
+    border: solid;
+    border-radius: 20px;
+    width: 90%; 
+    max-width: 250px; 
+    padding: 35px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box h3 {
+    color: snow;
+    text-shadow: none;
+    font-size: 40px;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+#box1, #box2, #box3 {
+    align-items: center;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+#box1 {
+    background-color: #e28525;
+}
+
+#box2 {
+    background-color: #016972;
+}
+
+#box3 {
+    background-color: #00403f;
+}
+
+.button_father {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 80px;
+}
+
+.buttons {
+    font-family: "Lexend Deca", sans-serif;
+}
+.buttons:hover {background-color: rosybrown;}
+
+.button1, .button2, .button3 {
+    background-color: aliceblue;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    color: #e0bd98;
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* responsiveness */
+@media (max-width: 1200px) {
+    .main_box {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+    }
+
+    .box {
+        max-width: auto;
+                 
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        max-width: 90%; 
+        padding: 20px;
+    }
+    .box h3 {
+        font-size: 30px;
+    }
+
+    .button1, .button2, .button3 {
+        width: 80px; 
+        height: 25px;
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 15px; 
+    }
+
+    .box h3 {
+        font-size: 24px;
+    }
+
+    .button1, .button2, .button3 {
+        width: 70px;
+        height: 20px;
+    }
+}
+@media (max-width: 330px) {
+    .box {
+        padding: 15px; 
+    }
+    .box h3 {
+        font-size: 24px;
+    }
+
+    .button1, .button2, .button3 {
+        width: 70px;
+        height: 20px;
+        font-size: 45%;
+    }
+
+}
